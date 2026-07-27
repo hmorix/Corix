@@ -1,1 +1,12 @@
-The `vercel.json` schema validation failed with the following message: `buildCommand` should NOT be longer than 256 characters
+computing gzip size...
+16:50:31.229 
+../dist/public/index.html                   0.81 kB │ gzip:   0.44 kB
+16:50:31.230 
+../dist/public/assets/index-BzOlN2ya.css   29.80 kB │ gzip:   5.45 kB
+16:50:31.232 
+../dist/public/assets/index-DSc5xBqT.js   468.16 kB │ gzip: 138.82 kB
+16:50:31.233 
+✓ built in 3.73s
+16:50:31.416 
+/vercel/path0/node_modules/esbuild/bin/esbuild:1
+16:50:31.417 

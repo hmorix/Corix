@@ -1,7 +1,7 @@
 {
   "version": 2,
   "installCommand": "npm install --include=dev --legacy-peer-deps",
-  "buildCommand": "bash build.sh",
+  "buildCommand": "node build.js",
   "outputDirectory": "dist/public",
   "rewrites": [
     {
