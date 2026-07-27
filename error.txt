@@ -1,32 +1,23 @@
-58.085 
-  ^
-16:12:58.085 
-16:12:58.085 
-Error: Cannot find module '/vercel/path0/node_modules/vite/bin/vite.js'
-16:12:58.085 
-    at Module._resolveFilename (node:internal/modules/cjs/loader:1476:15)
-16:12:58.085 
-    at wrapResolveFilename (node:internal/modules/cjs/loader:1049:27)
-16:12:58.085 
-    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1073:10)
-16:12:58.085 
-    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1094:12)
-16:12:58.085 
-    at Module._load (node:internal/modules/cjs/loader:1262:25)
-16:12:58.086 
+ 
+SyntaxError: Invalid or unexpected token
+16:17:22.322 
+    at wrapSafe (node:internal/modules/cjs/loader:1763:18)
+16:17:22.322 
+    at Module._compile (node:internal/modules/cjs/loader:1804:20)
+16:17:22.322 
+    at Object..js (node:internal/modules/cjs/loader:1961:10)
+16:17:22.322 
+    at Module.load (node:internal/modules/cjs/loader:1553:32)
+16:17:22.322 
+    at Module._load (node:internal/modules/cjs/loader:1355:12)
+16:17:22.322 
     at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
-16:12:58.086 
+16:17:22.322 
     at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
-16:12:58.086 
-    at node:internal/main/run_main_module:33:47 {
-16:12:58.086 
-  code: 'MODULE_NOT_FOUND',
-16:12:58.086 
-  requireStack: []
-16:12:58.086 
-}
-16:12:58.086 
-16:12:58.086 
+16:17:22.322 
+    at node:internal/main/run_main_module:33:47
+16:17:22.322 
+16:17:22.323 
 Node.js v24.15.0
-16:12:58.095 
-Error: Command "node node_modules/vite/bin/vite.js build && node node_modules/esbuild/bin/esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist" exited with 1
+16:17:22.332 
+Error: Command "node node_modules/vite/bin/vite.js build && 
