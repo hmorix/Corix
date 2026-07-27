@@ -15,9 +15,9 @@ async function runBuild() {
     outdir: "dist",
   });
 
-  console.log("Building api/index.ts...");
+  console.log("Building server/api.ts...");
   await buildEsbuild({
-    entryPoints: ["api/index.ts"],
+    entryPoints: ["server/api.ts"],
     platform: "node",
     packages: "external",
     bundle: true,
