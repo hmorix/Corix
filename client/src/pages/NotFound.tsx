@@ -1,52 +1,39 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle, Home } from "lucide-react";
+import { Home, Sparkles } from "lucide-react";
 import { useLocation } from "wouter";
 
 export default function NotFound() {
   const [, setLocation] = useLocation();
 
-  const handleGoHome = () => {
-    setLocation("/");
-  };
-
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
-      <Card className="w-full max-w-lg mx-4 shadow-lg border-0 bg-white/80 backdrop-blur-sm">
-        <CardContent className="pt-8 pb-8 text-center">
-          <div className="flex justify-center mb-6">
-            <div className="relative">
-              <div className="absolute inset-0 bg-red-100 rounded-full animate-pulse" />
-              <AlertCircle className="relative h-16 w-16 text-red-500" />
-            </div>
-          </div>
+    <div className="min-h-screen flex items-center justify-center gradient-transcendent px-4 relative overflow-hidden">
 
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">404</h1>
+      <div className="pointer-events-none" aria-hidden>
+        <div className="glow-orb glow-orb-primary" style={{ top: "-100px", left: "-80px", opacity: 0.25 }} />
+        <div className="absolute inset-0 dot-pattern opacity-30" />
+      </div>
 
-          <h2 className="text-xl font-semibold text-slate-700 mb-4">
-            Page Not Found
-          </h2>
+      <div className="glass-card p-10 sm:p-14 text-center max-w-md w-full relative z-10 page-enter">
 
-          <p className="text-slate-600 mb-8 leading-relaxed">
-            Sorry, the page you are looking for doesn't exist.
-            <br />
-            It may have been moved or deleted.
-          </p>
+        <div className="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-3xl"
+          style={{ background: "linear-gradient(135deg, oklch(0.58 0.24 290 / 0.15), oklch(0.54 0.26 305 / 0.10))", border: "1px solid oklch(0.58 0.24 290 / 0.25)" }}>
+          <span className="text-4xl font-bold serif-heading text-gradient">404</span>
+        </div>
 
-          <div
-            id="not-found-button-group"
-            className="flex flex-col sm:flex-row gap-3 justify-center"
+        <h1 className="serif-heading text-2xl sm:text-3xl mb-3">Page Not Found</h1>
+        <p className="sans-secondary text-sm mb-8 max-w-xs mx-auto">
+          Sorry, the page you're looking for doesn't exist. It may have been moved or deleted.
+        </p>
+
+        <div id="not-found-button-group" className="flex flex-col gap-3">
+          <button
+            className="btn-primary py-3 w-full"
+            onClick={() => setLocation("/")}
           >
-            <Button
-              onClick={handleGoHome}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
-            >
-              <Home className="w-4 h-4 mr-2" />
-              Go Home
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
+            <Home className="w-4 h-4" />
+            Go Home
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
