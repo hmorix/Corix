@@ -1,0 +1,8 @@
+.git
+.github
+.manus
+.manus-logs
+node_modules
+.env.local
+drizzle.config.ts.bak
+vite.config.ts.bak

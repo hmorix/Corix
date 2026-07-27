@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1785063874046,
+      "tag": "0000_clever_junta",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1785064113691,
+      "tag": "0001_red_star_brand",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1785065068821,
+      "tag": "0002_serious_warhawk",
+      "breakpoints": true
+    }
+  ]
+}
