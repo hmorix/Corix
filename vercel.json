@@ -1,12 +1,12 @@
 {
   "version": 2,
   "installCommand": "npm install --include=dev --legacy-peer-deps",
-  "buildCommand": "./node_modules/.bin/vite build && ./node_modules/.bin/esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+  "buildCommand": "./node_modules/.bin/vite build && ./node_modules/.bin/esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist && ./node_modules/.bin/esbuild api/index.ts --platform=node --packages=external --bundle --format=esm --outfile=api/index.js",
   "outputDirectory": "dist/public",
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "/api/index.ts"
+      "destination": "/api/index.js"
     },
     {
       "source": "/(.*)",
